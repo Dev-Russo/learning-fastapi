@@ -19,3 +19,14 @@ def read_user_details(user_id:int, include_email:bool=False):
         return {"user_id":user_id, "include email": "email included"}
     else:
         return {"user_id":user_id, "include email": "email not included"}
+    
+"""
+Path determina o caminho da URL enquanto o Query da algumas opções que não são obrigatórias
+por exemplo quero saper quantas vendas teve um comissário especifico
+/comissarios/{comissario_id}/vendas (Path) mas quero saber referente a um
+mês especifico 
+/comissarios/{comissario_id}/vendas/?mês=setembro
+
+Buscaria todas as vendas de setembro sem obrigatoriedade de puxar por mes 
+cria um consulta a menos se pararmos para pensar
+"""
